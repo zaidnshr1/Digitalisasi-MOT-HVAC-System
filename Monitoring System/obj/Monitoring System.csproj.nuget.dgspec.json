@@ -81,9 +81,13 @@
               "version": "[9.0.4, )",
               "autoReferenced": true
             },
-            "NModbus": {
+            "NModbus4": {
               "target": "Package",
-              "version": "[3.0.81, )"
+              "version": "[2.1.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -124,9 +128,13 @@
               "version": "[9.0.4, )",
               "autoReferenced": true
             },
-            "NModbus": {
+            "NModbus4": {
               "target": "Package",
-              "version": "[3.0.81, )"
+              "version": "[2.1.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -167,9 +175,13 @@
               "version": "[9.0.4, )",
               "autoReferenced": true
             },
-            "NModbus": {
+            "NModbus4": {
               "target": "Package",
-              "version": "[3.0.81, )"
+              "version": "[2.1.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -205,9 +217,13 @@
               "target": "Package",
               "version": "[9.0.14, )"
             },
-            "NModbus": {
+            "NModbus4": {
               "target": "Package",
-              "version": "[3.0.81, )"
+              "version": "[2.1.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [

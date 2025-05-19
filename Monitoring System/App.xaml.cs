@@ -1,10 +1,12 @@
-﻿namespace Monitoring_System
+﻿using Monitoring_System.View;
+
+namespace Monitoring_System
 {
     public partial class App : Application
     {
-        public App()
+        protected override Window CreateWindow(IActivationState? activationState)
         {
-            InitializeComponent();
+            return new Window(new UserInterface());
         }
     }
 }

@@ -62,17 +62,14 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
-		<PackageReference Include="NModbus" Version="3.0.81" />
+		<PackageReference Include="NModbus4" Version="2.1.0" />
+		<PackageReference Include="System.IO.Ports" Version="9.0.5" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="View\UserInterface.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="ViewModel\" />
 	</ItemGroup>
 
 </Project>

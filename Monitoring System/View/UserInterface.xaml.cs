@@ -1,14 +1,12 @@
-using Monitoring_System.ViewModel;
+using Microsoft.Maui.Controls;
 
-namespace Monitoring_System.View;
-
-public partial class UserInterface : ContentPage
+namespace Monitoring_System.View
 {
-	private ViewModelLamp viewModelLamp;
-	public UserInterface()
-	{
-		InitializeComponent();
-        viewModelLamp = new ViewModelLamp();
-		BindingContext = viewModelLamp;
-	}
+    public partial class UserInterface : ContentPage
+    {
+        public UserInterface()
+        {
+            InitializeComponent();
+        }
+    }
 }

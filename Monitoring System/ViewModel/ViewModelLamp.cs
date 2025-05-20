@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Modbus.Device;
 using System.IO.Ports;
+using System.Windows.Input;
 
 namespace Monitoring_System.ViewModel
 {
@@ -14,10 +15,15 @@ namespace Monitoring_System.ViewModel
         public ObservableCollection<ModelLamp> LampList { get; private set; }
         private TcpClient? _tcpClient;
         private ModbusIpMaster? _modbusMaster;
-
+        private readonly byte _slaveId = 1;
+        public ICommand ToggleLampCommand { get; }
         public ViewModelLamp()
         {
             LampList = new ObservableCollection<ModelLamp>(ModelLamp.GetDefaultLampList());
+            ConnectToModbus();
+            ReadLampStates();
+            LampList = new ObservableCollection<ModelLamp>(ModelLamp.GetDefaultLampList());
+            ToggleLampCommand = new Command<ModelLamp>(async (lamp) => await ToggleLampAsync(lamp));
             ConnectToModbus();
             ReadLampStates();
         }
@@ -31,7 +37,7 @@ namespace Monitoring_System.ViewModel
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Modbus Connection Failed: {ex.Message}");
+                Console.WriteLine($"--ConnectModbus Connection Failed: {ex.Message}");
             }
         }
 
@@ -45,7 +51,7 @@ namespace Monitoring_System.ViewModel
                     {
                         if (_modbusMaster == null)
                         {
-                            Console.WriteLine("Modbus connection failed");
+                            Console.WriteLine("--ReadLamp connection failed");
                             return;
                         }
 
@@ -54,12 +60,37 @@ namespace Monitoring_System.ViewModel
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"Failed to read coil for {Lamp.LampName}: {ex.Message}");
+                        Console.WriteLine($"Failed reading coil for {Lamp.LampName}: {ex.Message}");
                     }
                 }
                 await Task.Delay(500);
             }
         }
+
+        public async Task ToggleLampAsync(ModelLamp lamp)
+        {
+            if(_modbusMaster == null)
+            {
+                Console.WriteLine("--ToggleLampAsync Modbus Not Connected");
+                return;
+            }
+            try
+            {
+                if (lamp.IsLampOn == null)
+                {
+                    Console.WriteLine($"Lamp {lamp.LampName} in unknown state and cannot be toggled");
+                    return;
+                }
+                bool newState = !(lamp.IsLampOn ?? false);
+                await _modbusMaster.WriteSingleCoilAsync(lamp.LampPort, newState);
+                lamp.IsLampOn = newState;
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine($"--ToggleLamp Failed writing coil for {lamp.LampName}: {ex.Message}");
+            }
+        }
+
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = "")
         {

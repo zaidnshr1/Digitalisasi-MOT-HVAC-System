@@ -1,22 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:Monitoring_System.ViewModel"
+             xmlns:viewmodel="clr-namespace:Monitoring_System.ViewModel"
+             xmlns:converters="clr-namespace:Monitoring_System.Converters"
              xmlns:model="clr-namespace:Monitoring_System.Model"
              x:Class="Monitoring_System.View.UserInterface"
-             x:DataType="vm:ViewModelLamp"
-             Title="UserInterface">
-    
-    <VerticalStackLayout>
+             Title="Monitor Lampu">
+
+    <ContentPage.BindingContext>
+        <viewmodel:ViewModelLamp />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:LampStateToImageConverter x:Key="LampStateConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid Padding="10">
         <CollectionView ItemsSource="{Binding LampList}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:ModelLamp">
-                    <StackLayout Padding="10">
-                        <Label Text="{Binding LampName}" FontAttributes="Bold"/>
-                        <Label Text="{Binding IsLampOn}" />
-                    </StackLayout>
+                    <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                                <Label Text="{Binding LampName}" FontSize="18" FontAttributes="Bold" />
+                                <Label Text="{Binding IsLampOn, StringFormat='Status: {0}'}" FontSize="14" />
+                            </VerticalStackLayout>
+
+                            <ImageButton 
+                                Grid.Column="1"
+                                Source="{Binding IsLampOn, Converter={StaticResource LampStateConverter}}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ViewModelLamp}}, Path=ToggleLampCommand}"
+                                CommandParameter="{Binding}"
+                                HeightRequest="60"
+                                WidthRequest="60"
+                                Aspect="AspectFit"
+                                BackgroundColor="Transparent" />
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </VerticalStackLayout>
+    </Grid>
 </ContentPage>

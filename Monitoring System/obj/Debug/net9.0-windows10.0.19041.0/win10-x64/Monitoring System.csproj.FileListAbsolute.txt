@@ -472,3 +472,9 @@ D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\obj\Debug\net9.0-windo
 D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\System.IO.Ports.dll
+D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\buttondie.scale-100.png
+D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\buttonoff.scale-100.png
+D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\buttonon.scale-100.png
+D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttondie.scale-100.png
+D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttonoff.scale-100.png
+D:\CHILICOND\APLIKASI\Monitoring System\Monitoring System\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\buttonon.scale-100.png

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|d:\\chilicond\\aplikasi\\monitoring system\\monitoring system\\view\\userinterface.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|solutionrelative:view\\userinterface.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|d:\\chilicond\\aplikasi\\monitoring system\\monitoring system\\converters\\lampstatetoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|solutionrelative:converters\\lampstatetoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|d:\\chilicond\\aplikasi\\monitoring system\\monitoring system\\view\\userinterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|solutionrelative:view\\userinterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|d:\\chilicond\\aplikasi\\monitoring system\\monitoring system\\viewmodel\\viewmodellamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|solutionrelative:viewmodel\\viewmodellamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|d:\\chilicond\\aplikasi\\monitoring system\\monitoring system\\model\\modellamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CB18EB-ECCC-4237-A13E-6B18BB6EE3BD}|Monitoring System.csproj|solutionrelative:model\\modellamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModelLamp.cs",
+              "DocumentMoniker": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\Model\\ModelLamp.cs",
+              "RelativeDocumentMoniker": "Model\\ModelLamp.cs",
+              "ToolTip": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\Model\\ModelLamp.cs",
+              "RelativeToolTip": "Model\\ModelLamp.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:27:40.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserInterface.xaml.cs",
+              "DocumentMoniker": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\View\\UserInterface.xaml.cs",
+              "RelativeDocumentMoniker": "View\\UserInterface.xaml.cs",
+              "ToolTip": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\View\\UserInterface.xaml.cs",
+              "RelativeToolTip": "View\\UserInterface.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:24:54.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewModelLamp.cs",
+              "DocumentMoniker": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\ViewModel\\ViewModelLamp.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ViewModelLamp.cs",
+              "ToolTip": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\ViewModel\\ViewModelLamp.cs",
+              "RelativeToolTip": "ViewModel\\ViewModelLamp.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:22:41.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LampStateToImageConverter.cs",
+              "DocumentMoniker": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\Converters\\LampStateToImageConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\LampStateToImageConverter.cs",
+              "ToolTip": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\Converters\\LampStateToImageConverter.cs",
+              "RelativeToolTip": "Converters\\LampStateToImageConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:59:37.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserInterface.xaml",
+              "DocumentMoniker": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\View\\UserInterface.xaml",
+              "RelativeDocumentMoniker": "View\\UserInterface.xaml",
+              "ToolTip": "D:\\CHILICOND\\APLIKASI\\Monitoring System\\Monitoring System\\View\\UserInterface.xaml",
+              "RelativeToolTip": "View\\UserInterface.xaml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwC0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T02:21:59.427Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
